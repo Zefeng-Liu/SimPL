@@ -1,0 +1,11 @@
+let a = ref 100 in
+	let b = ref 200 in
+		let c = ref 300 in
+			let c = a in 
+				let a = b in
+					!a::!b::!c::nil
+				end
+			end
+		end
+	end
+end
